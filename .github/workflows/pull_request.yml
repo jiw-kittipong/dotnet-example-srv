@@ -3,7 +3,7 @@ name: CI/CD on Pull Request
 on:
   push:
     branches:
-      - develop
+      - main
 
 jobs:
   pull_request:
