@@ -7,7 +7,7 @@ on:
 
 jobs:
   pull_request:
-    uses: jiw-kittipong/github-action-workflows/.github/workflows/dotnet-ci-cd.yml
+    uses: jiw-kittipong/github-action-workflows/.github/workflows/dotnet-ci-cd.yml@main
     with: 
       application_name: "my-app"
       code_language: "dotnet"
