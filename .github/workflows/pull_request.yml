@@ -7,7 +7,6 @@ on:
 
 jobs:
   pull_request:
-    if: ${{ github.event.label.name == 'ready to test' }}
     uses: jiw-kittipong/github-action-workflows/.github/workflows/dotnet_pipeline.yml@main
     with: 
       application_name: "dotnet-example-api"
