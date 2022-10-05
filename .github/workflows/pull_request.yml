@@ -14,7 +14,7 @@ jobs:
       
       dotnet_version: "6.0"
       dotnet_project_path: "src/dotnet-example.API"
-      dotnet_test_enabled: false
+      dotnet_test_enabled: true
 
     secrets:
       aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
