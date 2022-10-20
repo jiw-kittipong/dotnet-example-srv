@@ -2,8 +2,14 @@ name: CI/CD on Pull Request
 
 on:
   pull_request:
-    types: [ labeled ]
-      
+    tags:
+      - ready to test
+      - ready to deploy
+      - api
+    branches:
+      - main
+      - develop
+
 jobs:
   pull_request:
     uses: jiw-kittipong/github-action-workflows/.github/workflows/dotnet_pipeline.yml@main
